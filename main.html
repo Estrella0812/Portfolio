@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="container" id="container">
+        <img src="src/bg.png" alt="background img" class="background_img">
+        <!-- <img src="src/screen_img.png" alt="screen img" class="screen"> -->
+
+        <div class = "icons">
+            <div class="icon_container" id="mydiv0">
+                <div class="icon" id="folder" onclick="popup(this)"><img src="src/icons/folder_icon.png" alt="github icon"></div>
+            </div>
+            <div class="icon_container" id="mydiv1">
+                <div class="icon" id="github">
+                    <a href = "https://github.com/estrella0812" target="_blank" rel="noopener noreferrer">
+                    <img src="src/icons/github_icon.png" alt="github icon">
+                </a>
+                </div>
+            </div>
+            <div class="icon_container" id="mydiv2">
+                <div class="icon" id="pc"><img src="src/icons/pc_icon.png" alt="github icon"></div>
+            </div>
+            <div class="icon_container" id="mydiv3">
+                <div class="icon" id="bin"><img src="src/icons/bin_icon.png" alt="github icon"></div>
+            </div>
+            <div class="icon_container" id="mydiv4">
+                <div class="icon" id="bin"><img src="src/icons/about_me_icon.png" alt="github icon"></div>
+            </div>
+            <div class="icon_container" id="mydiv5">
+                <div class="icon" id="resume"><img src="src/icons/pdf_icon.png" alt="github icon"></div>
+            </div>
+        </div>
+
+        <div class = "popups">
+            <div id="folder_popup" class="popup">
+                <div class="folder_header">
+                    <p class="folder_location">This PC > Desktop > Projects</p>
+                    <span class="close" onclick="onClose('folder_popup')">&times;</span>
+                </div>
+                <div class="files">
+                    <img src="src/icons/pdf_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/pdf_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/pdf_icon.png" alt="pdf" style="width:12%;">
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+<script src="main.js"></script>
+<!-- <script src="popup.js"></script> -->
+</body>
+</html>

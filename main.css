@@ -1,0 +1,145 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f8e3d8;
+}
+
+.background_img{
+    width: 100%;
+    pointer-events: none;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.container{
+    position: relative;
+}
+
+/* .screen{
+    position: absolute;
+    top: 11%;
+    left: 20.8%;
+    width: 57.5%;
+    height: 63.5%;
+} */
+
+.icon_container{
+    position: absolute;
+    cursor: pointer;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+}
+
+.icon_container:nth-of-type(1){
+    top: 20%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.icon_container:nth-of-type(2){
+    top: 31%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+.icon_container:nth-of-type(3){
+    top: 42%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.icon_container:nth-of-type(4){
+    top: 53%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.icon_container:nth-of-type(5){
+    top: 64%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.icon_container:nth-of-type(6){
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.icon img{
+    width: 3.5vw;
+}
+
+.popup{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s; 
+}
+
+.close{
+    font-size: 2vw;
+    color: #f68c90;
+    font-weight: bold;
+    margin-right: 1%;
+    float: right;
+    cursor: pointer; 
+}
+
+
+/* folder popup */
+#folder_popup{
+    border-radius: 15px;
+    width: 30%;
+    height: 37%;
+    top:16%;
+    left:37%;
+    background-color: white;
+}
+
+.close:nth-of-type(1){
+    color:white;
+    float: none;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.folder_location{
+    margin-left: 1vw;
+    border-width: 0.1vw;
+    width: 83%;
+    font-size: 1.9vh;
+    font-weight: bold;
+    padding-left: 1vw;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    color: white;
+    cursor: default;
+}
+
+.folder_header{
+    display:flex;
+    background-color:#f68c90;
+}
+
+.files{
+    float: left;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+.files img{
+    cursor: pointer;
+    margin-left: 3%;
+}
