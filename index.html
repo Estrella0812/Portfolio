@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Estrella's Computer</title>
 </head>
 <body id="body">
     <div class="container" id="container">
-        <img src="src/bg.png" alt="background img" class="background_img">
-        <!-- <img src="src/screen_img.png" alt="screen img" class="screen"> -->
+        <img src="src/bg.jpg" alt="background img" class="background_img">
+        <!-- <img src = "src/raining.gif" class="raining"> -->
 
         <div class = "icons">
             <div class="icon_container" id="mydiv0">
@@ -23,16 +23,16 @@
                 </div>
             </div>
             <div class="icon_container" id="mydiv2">
-                <div class="icon" id="pc"><img src="src/icons/pc_icon.png" alt="github icon"></div>
+                <div class="icon" id="pc" onclick="popup(this)"><img src="src/icons/pc_icon.png" alt="github icon"></div>
             </div>
             <div class="icon_container" id="mydiv3">
-                <div class="icon" id="bin"><img src="src/icons/bin_icon.png" alt="github icon"></div>
+                <div class="icon" id="bin" onclick="popup(this)"><img src="src/icons/bin_icon.png" alt="github icon"></div>
             </div>
             <div class="icon_container" id="mydiv4">
-                <div class="icon" id="bin"><img src="src/icons/about_me_icon.png" alt="github icon"></div>
+                <div class="icon" id="about_me" onclick="popup(this)"><img src="src/icons/about_me_icon.png" alt="github icon"></div>
             </div>
             <div class="icon_container" id="mydiv5">
-                <div class="icon" id="resume"><img src="src/icons/pdf_icon.png" alt="github icon"></div>
+                <div class="icon" id="resume" onclick="popup(this)"><img src="src/icons/pdf_icon.png" alt="github icon"></div>
             </div>
         </div>
 
@@ -43,10 +43,43 @@
                     <span class="close" onclick="onClose('folder_popup')">&times;</span>
                 </div>
                 <div class="files">
-                    <img src="src/icons/pdf_icon.png" alt="pdf" style="width:12%;">
-                    <img src="src/icons/pdf_icon.png" alt="pdf" style="width:12%;">
-                    <img src="src/icons/pdf_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
                 </div>
+            </div>
+            <div id="pc_popup" class="popup">
+                <div class="folder_header">
+                    <p class="folder_location">This PC</p>
+                    <span class="close" onclick="onClose('pc_popup')">&times;</span>
+                </div>
+                <div class="files">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
+                </div>
+            </div>
+            <div id="bin_popup" class="popup">
+                <div class="folder_header">
+                    <p class="folder_location">Bin</p>
+                    <span class="close" onclick="onClose('bin_popup')">&times;</span>
+                </div>
+                <div class="files">
+                    <!-- Files Here -->
+                </div>
+            </div>
+            <div id="about_me_popup" class="popup">
+                <div class = "close_cont">
+                    <span class="close2" onclick="onClose('about_me_popup')">&times;</span>
+                </div>
+                <div class="about_container">
+                    <img src = "src/icons/about_me_icon2.png" style ="width: 35%;" class="pfp_abt">
+                    <h2>Hanbyul (Estrella) Kim</h2>
+                    <p>
+                        estrellakim03@gmail.com
+                    </p>
+                </div>
+                
             </div>
         </div>
 

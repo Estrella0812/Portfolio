@@ -1,10 +1,18 @@
 const NUMBER_OF_ICONS = 6;
+const popups = ["folder_popup", "pc_popup", "bin_popup", "about_me_popup"]
  
 for (i = 0; i < NUMBER_OF_ICONS; ++i) { 
   dragElement(document.getElementById("mydiv" + i));
-}  
+}
+
+for(let i = 0; i < popups.length; i++){
+  dragElement(document.getElementById(popups[i]));
+}
+
 
 dragElement(document.getElementById("folder_popup"));
+dragElement(document.getElementById("pc_popup"));
+dragElement(document.getElementById("bin_popup"));
 
 //if its drag or click
 let drag = false;
@@ -72,6 +80,17 @@ function dragElement(elmnt) {
         y = (y > 65)? 63: 19;
       }
      }else if(elmnt.className === "popup"){   //if the dragged object is an element
+      //for brining the clicked element to the front
+      //not the best but Ill leave it like this
+      elmnt.style.zIndex = "2";
+      for(let i = 0; i < popups.length; i++){
+        if(popups[i]===elmnt.id){
+          continue;
+        }
+        document.getElementById(popups[i]).style.zIndex = "auto";
+      }
+
+
       var popup_height = (elmnt.offsetHeight/h) * 100;
       var popup_width = (elmnt.offsetWidth/w) * 100;
 
@@ -103,12 +122,19 @@ function dragElement(elmnt) {
 
 //popup part
 function popup(e){
-    if(drag){
-        return;
+  for(let i = 0; i < popups.length; i++){
+    if(popups[i]===e.id){
+      continue;
     }
-    var popup = document.getElementById(e.id+"_popup");
-    popup.style.visibility="visible";
-    popup.style.opacity="1";
+    document.getElementById(popups[i]).style.zIndex = "auto";
+  }
+  if(drag){
+       return;
+  }
+  var popup = document.getElementById(e.id+"_popup");
+  popup.style.zIndex = "2";
+  popup.style.visibility="visible";
+  popup.style.opacity="1";
 }
 
 function onClose(s){
@@ -118,6 +144,18 @@ function onClose(s){
         popup.style.visibility="hidden";
     },500);
 }
+
+//bring Front when pressed
+
+// function bringFront(e){
+//   e.style.zIndex = "2";
+//   for(let i = 0; i < popups.length; i++){
+//     if(popups[i]===e.id){
+//       continue;
+//     }
+//     document.getElementById(popups[i]).style.zIndex = "auto";
+//   }
+// }
 
 
 //know if its mobile or not
