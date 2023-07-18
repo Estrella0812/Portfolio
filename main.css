@@ -188,7 +188,6 @@ body{
     color: #f68c90;
     font-weight: bold;
     cursor: pointer;
-    display: inline-block;
 }
 
 
@@ -197,7 +196,49 @@ body{
     margin-bottom: 3vh;
 }
 
-.about_container p, h2{
+.abot_info p, h2{
     color: #5d5d5d;
     margin: 0;
+}
+
+.abt_intro{
+    color: #5d5d5d;
+    margin: 0.8vh auto;
+    text-align: center;
+    height: 35%;
+    width: 95%;
+    overflow: auto;
+    bottom: 0%;
+}
+
+
+/* scroll bars from ww3 */
+/* width */
+::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f68c90; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d27c7f; 
+  }
+
+
+
+
+.windows_footer{
+    position: absolute;
+    top: 70.7%;
+    left: 23.5%;
 }
