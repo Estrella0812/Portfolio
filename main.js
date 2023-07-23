@@ -1,5 +1,5 @@
 const NUMBER_OF_ICONS = 6;
-const popups = ["folder_popup", "pc_popup", "bin_popup", "about_me_popup"]
+const popups = ["folder_popup", "pc_popup", "bin_popup", "about_me_popup", "project_popup"]
  
 for (i = 0; i < NUMBER_OF_ICONS; ++i) { 
   dragElement(document.getElementById("mydiv" + i));
@@ -128,9 +128,15 @@ function popup(e){
     }
     document.getElementById(popups[i]).style.zIndex = "auto";
   }
-  if(drag){
-       return;
+  //if its project
+  if(e.id==="project"){
+    openProject(e);
   }
+  if(drag){
+    return;
+  }
+
+  console.log("YE")
   var popup = document.getElementById(e.id+"_popup");
   popup.style.zIndex = "2";
   popup.style.visibility="visible";
@@ -145,34 +151,18 @@ function onClose(s){
     },500);
 }
 
-//bring Front when pressed
+async function openProject(e){
+  //make it fade in and fade out
+  // if(document.getElementById("project_popup").style.visibility==="visible"){
+  //   onClose("project_popup");
+  // }
 
-// function bringFront(e){
-//   e.style.zIndex = "2";
-//   for(let i = 0; i < popups.length; i++){
-//     if(popups[i]===e.id){
-//       continue;
-//     }
-//     document.getElementById(popups[i]).style.zIndex = "auto";
-//   }
-// }
+  setName(e);
+  setLanguages(e);
+  setDescription(e);
+  setLink(e);
+}
 
-
-//know if its mobile or not
-// /* Storing user's device details in a variable*/
-// let details = navigator.userAgent;
-  
-// /* Creating a regular expression 
-// containing some mobile devices keywords 
-// to search it in details string*/
-// let regexp = /android|iphone|kindle|ipad/i;
-  
-// /* Using test() method to search regexp in details
-// it returns boolean value*/
-// let isMobileDevice = regexp.test(details);
-  
-// if (isMobileDevice) {
-//     console.log("You are using a Mobile Device");
-// } else {
-//     console.log("You are using Desktop");
-// }
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

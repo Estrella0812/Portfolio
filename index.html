@@ -43,9 +43,10 @@
                     <span class="close" onclick="onClose('folder_popup')">&times;</span>
                 </div>
                 <div class="files">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="WEB-SCRAPER" onclick="popup(this)">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="Emailing Bot" onclick="popup(this)">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="HTML-to-TXT" onclick="popup(this)">
+                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="Portfolio" onclick="popup(this)">
                 </div>
             </div>
             <div id="pc_popup" class="popup">
@@ -92,18 +93,60 @@
                     </p>
                 </div>
             </div>
+
+            <div id="project_popup" class="popup">
+                <div class="folder_header">
+                    <p class="project_title" id="project_title">WEB-SCRAPER</p>
+                    <span class="close" onclick="onClose('project_popup')">&times;</span>
+                </div>
+                <div class="project_languages files" id="project_languages">
+                    <div id="project_languages_container">
+                        <p id="project_language_list">PYTHON</p>
+                        <p id="project_language_list">HTML</p>
+                        <p id="project_language_list">JS</p>
+                    </div>
+                </div>
+                <div class="description_project">
+                    <p class="description_project_content">
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                    </p>
+                </div>
+                <div class="project_button">
+                    <a href="">GitHub</a>
+                </div>
+            </div>
         </div>
 
 
         <div class="windows_footer_container">
-            <!-- <img src="src/icons/folder_iconOnly.png" class="folder_small_icon windows_footer" style="width: 1%;">
-            <img src="src/icons/bin_iconOnly.png" class="bin_small_icon windows_footer" style="width: 1%;">
-            <img src="src/icons/pdf_iconOnly.png" class="pdf_small_icon windows_footer" style="width: 1%;">
-            <img src="src/icons/about_me_iconOnly.png" class="/about_me_small_icon windows_footer" style="width: 1.5%;"> -->
+            <div class="windows_footer_imgs">
+                <!-- <img src="src/icons/folder_iconOnly.png" class="folder_small_icon windows_footer" style="width: 2%;">
+                <img src="src/icons/bin_iconOnly.png" class="bin_small_icon windows_footer" style="width: 2.5%;">
+                <img src="src/icons/pdf_iconOnly.png" class="pdf_small_icon windows_footer" style="width: 2%;">
+                <img src="src/icons/about_me_iconOnly.png" class="/about_me_small_icon windows_footer" style="width: 2.8%;"> -->
+            </div>
         </div>
     
     </div>
 <script src="main.js"></script>
-<!-- <script src="popup.js"></script> -->
+<script src="project.js"></script>
 </body>
 </html>
