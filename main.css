@@ -290,11 +290,6 @@ body{
     font-size: 0.85em;
 }
 
-.popup:nth-of-type(5){
-    opacity: 1;
-    visibility: visible;
-}
-
 .description_project{
     color: #5d5d5d;
     margin: 0 auto;
