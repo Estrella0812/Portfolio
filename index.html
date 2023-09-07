@@ -18,8 +18,8 @@
             <div class="icon_container" id="mydiv1">
                 <div class="icon" id="github">
                     <a href = "https://github.com/estrella0812" target="_blank" rel="noopener noreferrer">
-                    <img src="src/icons/github_icon.png" alt="github icon">
-                </a>
+                        <img src="src/icons/github_icon.png" alt="github icon">
+                    </a>
                 </div>
             </div>
             <div class="icon_container" id="mydiv2">
@@ -39,14 +39,14 @@
         <div class = "popups">
             <div id="folder_popup" class="popup">
                 <div class="folder_header">
-                    <p class="folder_location">This PC > Desktop > Projects</p>
+                    <p class="folder_location">This PC > Projects</p>
                     <span class="close" onclick="onClose('folder_popup')">&times;</span>
                 </div>
                 <div class="files">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="WEB-SCRAPER" onclick="popup(this)">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="Emailing Bot" onclick="popup(this)">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="HTML-to-TXT" onclick="popup(this)">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;" id="project" class="Portfolio" onclick="popup(this)">
+                    <img src="src/project_icons/webscraper.png" alt="pdf" style="width:12%;" id="project" class="WEB-SCRAPER" onclick="popup(this)">
+                    <img src="src/project_icons/emailingBot.png" alt="pdf" style="width:12%;" id="project" class="Emailing Bot" onclick="popup(this)">
+                    <img src="src/project_icons/html-to-txt.png" alt="pdf" style="width:12%;" id="project" class="HTML-to-TXT" onclick="popup(this)">
+                    <img src="src/project_icons/portfolio.png" alt="pdf" style="width:12%;" id="project" class="Portfolio" onclick="popup(this)">
                 </div>
             </div>
             <div id="pc_popup" class="popup">
@@ -54,10 +54,13 @@
                     <p class="folder_location">This PC</p>
                     <span class="close" onclick="onClose('pc_popup')">&times;</span>
                 </div>
-                <div class="files">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
-                    <img src="src/icons/project_icon.png" alt="pdf" style="width:12%;">
+                <div class="files" id="folder_file_section">
+                    <img src="src/icons/about_me_icon.png" alt="pdf" style="width:12%;" id="about_me" onclick="popup(this)">
+                    <a href = "https://github.com/estrella0812" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                        <img src="src/icons/github_icon.png" alt="github icon" style="width:12%;">
+                    </a>
+                    <img src="src/icons/folder_icon.png" alt="pdf" style="width:12%;" id="folder" onclick="popup(this)">
+                    <img src="src/icons/pdf_icon.png" alt="pdf" style="width:12%;">
                 </div>
             </div>
             <div id="bin_popup" class="popup">
@@ -94,6 +97,7 @@
                 </div>
             </div>
 
+
             <div id="project_popup" class="popup">
                 <div class="folder_header">
                     <p class="project_title" id="project_title">WEB-SCRAPER</p>
@@ -107,30 +111,11 @@
                     </div>
                 </div>
                 <div class="description_project">
-                    <p class="description_project_content">
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
-                        ERRIUJHERRIJUEBIJKU:ERIUBJK</br>
+                    <p class="description_project_content" id="description_project_content">
                     </p>
                 </div>
                 <div class="project_button">
-                    <a href="">GitHub</a>
+                    <a href="" id="project_gitHub_link" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>

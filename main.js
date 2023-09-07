@@ -22,9 +22,9 @@ document.addEventListener(
 document.addEventListener(
     'mousemove', () => drag = true);
   
-document.addEventListener(
-    'mouseup', () => console.log(
-        drag ? 'drag' : 'click'));
+// document.addEventListener(
+//     'mouseup', () => console.log(
+//         drag ? 'drag' : 'click'));
 
 
 // Make the DIV element draggable:
@@ -122,6 +122,7 @@ function dragElement(elmnt) {
 
 //popup part
 function popup(e){
+  //set other popup index to auto so they go behind the one that is clicked
   for(let i = 0; i < popups.length; i++){
     if(popups[i]===e.id){
       continue;
@@ -136,7 +137,6 @@ function popup(e){
     return;
   }
 
-  console.log("YE")
   var popup = document.getElementById(e.id+"_popup");
   popup.style.zIndex = "2";
   popup.style.visibility="visible";
@@ -152,7 +152,7 @@ function onClose(s){
 }
 
 async function openProject(e){
-  //make it fade in and fade out
+  //make it fade in and fade out (maybe later :D..)
   // if(document.getElementById("project_popup").style.visibility==="visible"){
   //   onClose("project_popup");
   // }
