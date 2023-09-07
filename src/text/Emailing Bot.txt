@@ -1,0 +1,5 @@
+- Description - </br>
+Python-based solution designed to automate the process of sending identical emails to a list of different email addresses individually.</br> </br>
+- Motivation - </br>
+During my involvement in the VFC intrapreneurship, I was faced with a laborious task of individualy sending numerous identical emails.
+Driven by the desire to optimize my time, I embarked on developing an automated solution.

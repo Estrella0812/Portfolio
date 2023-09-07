@@ -1,0 +1,5 @@
+- Description - </br>
+Designed to transform HTML documents into readable and structured text format. 
+I utilized beautiful Soup library in Python to parse and extract the desired HTML elements saving the raw text into a file.
+JavaScript then took over to further enhance the text's clarity and readability.
+Batch script was employed to systematically run both the Python and JavaScript components in sequence.
