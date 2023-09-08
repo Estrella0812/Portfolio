@@ -1,0 +1,3 @@
+- Description - </br>
+A website of the game rock paper and scissor where the user plays against another user (locally) or against the computer.</br></br>
+<a href="https://estrella0812.github.io/RPS/"target="_blank" style="color: #5d5d5d;">TRY DEMO</a>

@@ -1,0 +1,2 @@
+- Description - </br>
+Java-based game made with the software Android Studio. A memorization game that helps user stimulate their brain.
