@@ -4,14 +4,18 @@ const githubLink = new Map([
     ["WEB-SCRAPER", "https://github.com/Estrella0812/webScraperREMAX"],
     ["HTML-to-TXT", "https://github.com/Estrella0812/HTMLToTXT"],
     ["Emailing Bot", "https://github.com/Estrella0812/webScraperREMAX/tree/main/emailBot"],
-    ["Portfolio", "https://github.com/Estrella0812/Portfolio"]
+    ["Portfolio", "https://github.com/Estrella0812/Portfolio"],
+    ["N-Back", "https://github.com/Estrella0812/N-Back"],
+    ["Rock Paper Scissor", "https://github.com/Estrella0812/RPS"]
 ]);
 
 const popupLanguage = new Map([
     ["WEB-SCRAPER", ["Python"]],
     ["HTML-to-TXT", htmlToTxt],
     ["Emailing Bot", ["Python"]],
-    ["Portfolio", portfolio]
+    ["Portfolio", portfolio],
+    ["Rock Paper Scissor", portfolio],
+    ["N-Back", ["Java"]]
 ]);
 
 function setName(e){
